@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    
+    list-style: none;
+    display: inline-block;
+    margin: 10px 40px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------------------NAVBAR--------------------- */
+.logo{
+    font-size: 30px;
+    font-family: Forte;
+    margin-left: 40px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(24, 132, 33, 0);
+}
+ul li a:hover{
+    color: red;    
+}
+
+
+/* ------------------Logo----------------------- */
+
+.loader{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    color: rgb(255, 255, 255);
+    font-family: Forte;
+    font-weight: bolder;
+}
+.ring{
+    width: 100px;
+    height: 100px;
+    border: 0px solid #011015;
+    border-radius: 50%;
+    position: absolute;
+}
+.ring:nth-child(1){
+    border-bottom-width: 8px;
+    border-color: rgb(39, 247, 2);
+    animation: rotate1 2s linear infinite;
+}
+
+
+.ring:nth-child(2){
+    border-right-width: 8px;
+    border-color: rgb(237, 241, 2);
+    animation: rotate2 2s linear infinite;
+}
+
+.ring:nth-child(3){
+    border-top-width: 8px;
+    border-color: rgb(24, 12, 188);
+    animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate1{
+    0%{
+        transform: rotatex(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotatex(35deg) rotateY(-45deg) rotateZ(360deg);
+
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform: rotatex(50deg) rotateY(-10deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotatex(50deg) rotateY(-10deg) rotateZ(360deg);
+
+    }
+}
+
+@keyframes rotate3{
+    0%{
+        transform: rotatex(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotatex(35deg) rotateY(55deg) rotateZ(360deg);
+
+    }
+}

@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.387),rgba(255, 166, 0, 0.338),rgba(255, 255, 0, 0.338),rgba(0, 128, 0, 0.297),rgba(0, 0, 255, 0.42),rgba(76, 0, 130, 0.42),rgba(238, 130, 238, 0.437));}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-card{
+    flex-basis: 250px;
+    margin: 20px;
+    border-radius: 30px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+.contact-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    border-bottom: 2px solid black;
+}
+.contact-card h3{
+    text-align: center;
+}
+.contact-card p{
+    font-size: 12px;
+}

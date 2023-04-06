@@ -1,0 +1,16 @@
+.container{
+    border: 2px solid black;
+    max-width: fit-content;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 0.5em;
+
+}
+p{
+    font-size: 1.5em;
+}
+button{
+    grid-column: auto / span 2;
+}
